@@ -1,8 +1,16 @@
 px = argument[0];
 py = argument[1];
 
+
 width = 128;
 height = 18;
+
+//show_debug_message("argument_count:"+string(argument_count));
+
+if( argument_count > 2){
+	width = argument[2];
+	height = argument[3];
+}
 
 //text = argument[2];
 
@@ -18,7 +26,7 @@ if((mx >= 0 + px) and (mx <= width + px)and(my >= 0+ py) and (my <= height + py)
 	//show_debug_message("hit");
 	//draw_text(px, py, text);
 	if(mouse_check_button_pressed(mb_left)){
-		show_debug_message("press")
+		//show_debug_message("press")
 		click = true;
 	}
 }
