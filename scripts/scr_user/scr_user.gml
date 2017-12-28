@@ -1,6 +1,10 @@
-name = "";
+playername = "None";
+race = "human";
 gender = "male";
-age = 15;
+age = 16;
+job = "Cook (God Chef hidden)";
+titles = [];
+skills = [];
 
 
 //items[0,0] = "meat";
