@@ -10,7 +10,7 @@ menu_min_y = 0;
 menu_max_y = 0;
 
 menus[0,0] = "Status";
-menus[0,1] = "Status";
+//menus[0,1] = "Status";
 menus[1,0] = "Items";
 menus[2,0] = "Equips";
 menus[3,0] = "Skills";
