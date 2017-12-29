@@ -45,7 +45,23 @@ if(file_exists("Save.sav")){
 	
 	//show_debug_message("Name"+ item_data[? "meat"]);
 	
-	show_debug_message(item_data);
+	var key = ds_map_find_first(item_data);
+	
+	show_debug_message("KEY:"+ key);
+	
+	var size = ds_map_size(item_data);
+	
+	for (var i = 0; i < size-1; i++;)
+	{
+      key = ds_map_find_next(item_data, key);
+	  if(key != noone){
+		show_debug_message("KEY:"+ string(key));
+	  }
+	}
+	
+	//show_debug_message(item_data[? "meat"]);
+	//var item_data = item_data[? "meat"];
+	//show_debug_message(item_data[? "name"]);
 	
 	
 	
