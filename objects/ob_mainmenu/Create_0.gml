@@ -16,3 +16,10 @@ menu_exit[0] = "Yes";
 menu_exit[1] = "No";
 
 select_exit = 0;
+
+playername = "Guest";
+displayname = playername;
+bedit = 1;
+btogglebar = 0;
+limit = 20;
+
