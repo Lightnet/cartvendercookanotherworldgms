@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 menu_x = 0;
-menu_y = 0;
+menu_y = -1;
 
 
 menus[0] = "New Game";

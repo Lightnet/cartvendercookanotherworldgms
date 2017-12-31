@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+bhelpkey = false;
 bshowhud = false;
 
 menu_x = 0;

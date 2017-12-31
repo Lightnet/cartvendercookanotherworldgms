@@ -54,3 +54,43 @@ if(bedit){
 }
 
 draw_text(128+32,120, displayname);
+
+
+if(scr_draw_button(4,140)){
+	show_debug_message("toggle");
+	if(gender){
+		gender = 0;	
+	}else{
+		gender = 1;
+	}
+}
+
+draw_set_colour(c_white);
+draw_text(4,120+20, "Gender");
+
+draw_text(128+32,120+20, "Male");
+
+if(scr_draw_button(4,140+20)){
+	show_debug_message("toggle");
+	if(gender){
+		gender = 0;	
+	}else{
+		gender = 1;
+	}
+}
+draw_set_colour(c_white);
+draw_text(4,120+20*2, "Job");
+
+draw_text(128+32,120+20*2, "Cook");
+
+if(scr_draw_button(4,140+20*3)){
+	show_debug_message("start game");
+	if(instance_exists(obj_user)){
+		obj_user.playername = keyboard_string;
+		
+		room_goto(rm_prototype);
+	}
+}
+
+draw_set_colour(c_white);
+draw_text(4,120+20*4, "Start Game");

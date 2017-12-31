@@ -7,10 +7,9 @@ titles = [];
 skills = [];
 
 
+
 //items[0,0] = "meat";
-
 //items[1,0] = "salt";
-
 //items = array_create(0);
 
 items = noone;
@@ -18,8 +17,8 @@ items = noone;
 items = scr_item_add(items,"meat",1);
 //show_debug_message("LEN:"+string(array_height_2d(items)));
 
-items = scr_item_add(items,"salt",1);
-items = scr_item_add(items,"sugar",1);
+items = scr_item_add(items,"salt",2);
+items = scr_item_add(items,"sugar",4);
 
 //len = array_height_2d(items);
 //show_debug_message("LEN:"+string(len));
